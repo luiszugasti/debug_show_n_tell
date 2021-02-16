@@ -28,9 +28,6 @@ def get_euclidian_distance(row1, row2):
     intermediate_y = row1["y"] ** 2 - row2["y"] ** 2
     intermediate_x = row1["x"] ** 2 - row2["x"] ** 2
 
-    intermediate_y = int(row1["y"]) - int(row2["y"])
-    intermediate_x = int(row1["x"]) - int(row2["x"])
-
     return get_square_root(intermediate_x + intermediate_y, 1.0)
 
 
