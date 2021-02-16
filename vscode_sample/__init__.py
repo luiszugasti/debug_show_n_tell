@@ -18,17 +18,6 @@ def get_square_root(a, x):
 def get_euclidian_distance(row1, row2):
     """ Returns 2 dimensional euclidian distance between two rows of a dataframe """
 
-    # Consider, for a moment, that we didn't know _what_was happening with our program.
-    # we could try print statements.
-    # print("row1's x entry: {}, row1's y entry: {}".format(row1["x"], row1["y"]))
-
-    # print statements are potentially brittle, depending on how much they expect from a data structure/API
-    # print("row2's x entry: {}, row2's y entry: {}".format(row1["X"], row1["Y"]))
-
-    # what are we doing wrong here?
-    # intermediate_y = row1["y"] - row2["y"]
-    # intermediate_x = row1["x"] - row2["x"]
-
     intermediate_y = math.fabs(int(row1["y"]) - int(row2["y"]))
     intermediate_x = math.fabs(int(row1["x"]) - int(row2["x"]))
 
